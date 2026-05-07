@@ -1,0 +1,35 @@
+2016/2025,Water (0),	Trees (1),	Crops (2),	Built Area (3)
+Water (0),	36.16 (Stable),	8.63,	10.27,	3.46
+Trees (1),	4.61,	522.66 (Stable),	67.42,	32.04
+Crops (2),	20.33,	1149.56,	1066.83 (Stable),	113.56
+Built Area (3),	1.68,	42.36,	16.43, 259.90 (Stable)
+
+Key Insights & Spatiotemporal Trends
+
+Based on this matrix, here are the dominant changes that occurred in the Madhubani district over the 9-year period:
+
+1. Massive Shift from Crops to Trees (The Dominant Transition)
+
+    Insight: An astonishing 1,149.56 sq km of land transitioned from Crops to Trees.
+
+    Interpretation: This is by far the highest volume change in the district. In the context of Bihar, this likely represents a massive transition into agroforestry or commercial orchards (like mango, litchi, or makhana plantations, which are highly prevalent in the Mithila region).
+
+    Note on Validation: Because Dynamic World is an automated algorithm, you should visually ground-truth this. Sometimes mature, dense crops (like tall sugarcane or maize just before harvest) can trick the algorithm into classifying it as "Trees".
+
+2. Urbanization is Eating Agricultural Land
+
+    Insight: The district gained approximately 149 sq km of brand new Built Area between 2016 and 2025 (3.46 + 32.04 + 113.56).
+
+    Interpretation: Of this new urban development, 113.56 sq km (76%) came directly at the expense of Cropland. This perfectly aligns with the principles discussed in the "Bihar Urban Growth Factors" tutorial: cities in this region expand horizontally by consuming flat, peripheral agricultural land.
+
+3. Water Body Volatility
+
+    Insight: While 36.16 sq km of water remained stable, Madhubani lost over 22 sq km of water bodies to vegetation and crops, while simultaneously gaining about 25 sq km of new water from previously forested or cropped areas.
+
+    Interpretation: This indicates highly dynamic, shifting floodplains or shifting river courses (common in northern Bihar due to Himalayan river tributaries). Water bodies here aren't static; they dry up for farming in some areas and flood agricultural land in others.
+
+4. Deforestation for Agriculture
+
+    Insight: 67.42 sq km of land that was forested (Trees) in 2016 was cleared and converted into Cropland by 2025.
+
+    Interpretation: While agroforestry is increasing (as seen in point 1), there are still significant pockets where natural tree cover is being cleared to make way for traditional farming.
