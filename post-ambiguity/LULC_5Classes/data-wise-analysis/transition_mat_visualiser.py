@@ -1,159 +1,159 @@
 import re
+print("Hi")
 import pandas as pd
+print("hi")
 import numpy as np
+print("Hi")
 
-# Note: The raw_text provided in your prompt appears to be the LULC area for a single year 
-# (single digits 0-4). For the transition matrix to work properly, ensure you paste the 
-# transition output where classes are two digits (e.g., 12 for Trees to Crops, or 43).
 raw_text = """
 0: 
 Object (2 properties)
 sum: 
-36.16031242058838
+37.378953211554055
 transition_class: 
 0
 1: 
 Object (2 properties)
 sum: 
-8.626016719198077
+3.5047633541092162
 transition_class: 
 1
 2: 
 Object (2 properties)
 sum: 
-10.274697298353244
+28.99476623538202
 transition_class: 
 2
 3: 
 Object (2 properties)
 sum: 
-3.4586629261259203
+6.212983796342678
 transition_class: 
 3
 4: 
 Object (2 properties)
 sum: 
-4.581863322805607
+20.258752342536084
 transition_class: 
 4
 5: 
 Object (2 properties)
 sum: 
-4.608272056571691
+1.188212590556065
 transition_class: 
 10
 6: 
 Object (2 properties)
 sum: 
-522.6604199641116
+123.31693847372512
 transition_class: 
 11
 7: 
 Object (2 properties)
 sum: 
-67.4226003414944
+23.5665962493567
 transition_class: 
 12
 8: 
 Object (2 properties)
 sum: 
-32.04113654968986
+33.17192402064205
 transition_class: 
 13
 9: 
 Object (2 properties)
 sum: 
-0.6960704707031249
+1.1483891099724266
 transition_class: 
 14
 10: 
 Object (2 properties)
 sum: 
-20.327789517953477
+3.4210140608341
 transition_class: 
 20
 11: 
 Object (2 properties)
 sum: 
-1149.5640492557864
+18.037875460906903
 transition_class: 
 21
 12: 
 Object (2 properties)
 sum: 
-1066.8347021820932
+216.46747650533538
 transition_class: 
 22
 13: 
 Object (2 properties)
 sum: 
-113.55909445627283
+95.89117699356318
 transition_class: 
 23
 14: 
 Object (2 properties)
 sum: 
-6.609691943148762
+4.56316421979549
 transition_class: 
 24
 15: 
 Object (2 properties)
 sum: 
-1.6755281835248153
+1.7760277636718746
 transition_class: 
 30
 16: 
 Object (2 properties)
 sum: 
-42.360006325765966
+65.32601870059372
 transition_class: 
 31
 17: 
 Object (2 properties)
 sum: 
-16.427179561347117
+40.015830506062436
 transition_class: 
 32
 18: 
 Object (2 properties)
 sum: 
-259.9048384957718
+745.7626972812685
 transition_class: 
 33
 19: 
 Object (2 properties)
 sum: 
-1.0981170000651046
+1.07100309888174
 transition_class: 
 34
 20: 
 Object (2 properties)
 sum: 
-4.998127476711865
+43.86954765258474
 transition_class: 
 40
 21: 
 Object (2 properties)
 sum: 
-6.201522238916996
+11.05411887627914
 transition_class: 
 41
 22: 
 Object (2 properties)
 sum: 
-12.25034851961548
+241.95327067680418
 transition_class: 
 42
 23: 
 Object (2 properties)
 sum: 
-0.8331245210899201
+112.4935646102222
 transition_class: 
 43
 24: 
 Object (2 properties)
 sum: 
-6.880620003944578
+73.12471734073135
 transition_class: 
 44
 """

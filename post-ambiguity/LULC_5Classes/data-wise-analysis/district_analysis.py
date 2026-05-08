@@ -3,8 +3,8 @@ import re
 
 # 1) Load the datasets
 # Update these file paths if your files are named differently
-df_2016 = pd.read_csv('./V2_Bihar_District_LULC_2016.csv')
-df_2025 = pd.read_csv('./V2_Bihar_District_LULC_2025.csv')
+df_2016 = pd.read_csv('./lulcs/V2_Bihar_District_LULC_2016.csv')
+df_2025 = pd.read_csv('./lulcs/V2_Bihar_District_LULC_2025.csv')
 
 DISTRICT_COL = 'District'
 
